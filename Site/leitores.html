@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitores | Estante Comum</title>
+</head>
+<body>
+    <header>
+        <h1>Estante Comum</h1>
+        <nav>
+            <a href="cadastrar.html">Cadastro de leitores</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+        <h2>Oferecer um livro</h2>
+
+        <form id="form-oferta" method="post">
+            <p>
+                <label for="titulo">Título do livro</label>
+                <input type="text" id="titulo" name="titulo" required>
+            </p>
+
+            <p>
+                <label for="autor">Autor ou autora</label>
+                <input type="text" id="autor" name="autor" required>
+            </p>
+
+            <button type="submit">Oferecer para troca</button>
+        </form>
+        </section>
+        
+        <section>
+            <h2>Livros disponíveis para troca</h2>
+            <ul id="lista-livros"></ul>
+        </section>
+
+        <section>
+            <h2>Leitores ativos</h2>
+            <p>Aqui aparecem os leitores que têm livros disponíveis para troca.</p>
+            <ul id="lista-leitores"></ul>
+        </section>
+    </main>
+</body>
+</html>

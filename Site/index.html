@@ -1,13 +1,29 @@
-<HTML>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Biblioteca Comunitária · Comunidade de Leitura</title>
-        <link rel="stylesheet" href="estilo.css">
-        <script src="script.js" defer></script>
-    </head>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Estante Comum</title>
+    <script src="login.js" defer></script>
+</head>
+<body>
+    <h1>Estante Comum</h1>
+    <p>Entre na sua conta para trocar livros com outros leitores.</p>
+    <form id="login">
+        <p id="mensagem" role="status"></p>
+        <p>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" autocomplete="username" required>
+        </p>
 
-    <body>
+        <p>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" autocomplete="current-password" required>
+        </p>
 
-    </body>
-</HTML>
+        <button type="submit">Entrar</button>
+    </form>
+
+<a href="cadastrar.html">Criar uma conta</a>
+</body>
+</html>
